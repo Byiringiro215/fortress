@@ -91,9 +91,14 @@
       }
     }
   },
-  "files": ["dist", "src", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "dev": "bun run --watch examples/hono-app/index.ts",
+    "dev": "node init && bun run --watch examples/hono-app/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
